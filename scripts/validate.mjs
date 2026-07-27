@@ -11,7 +11,7 @@ const renderTestsPath = path.join(root, "data", "render-tests.json");
 const renderTests = JSON.parse(fs.readFileSync(renderTestsPath, "utf8"));
 const errors = [];
 const requiredRepositoryFiles = [
-  "assets/cover.svg",
+  "assets/cover.webp",
   "data/render-tests.json",
   "docs/research-notes.md",
   "scripts/run.mjs",
