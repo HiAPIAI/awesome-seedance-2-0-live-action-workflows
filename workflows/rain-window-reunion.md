@@ -8,6 +8,19 @@ A restrained reunion told through one glance, one step, and a reflection crossin
 
 用一次对视、一步靠近和雨窗反射完成克制的重逢。
 
+## Verified Render Evidence / 真实生成证据
+
+- Task: `tk-hiapi-01KYGVY9CFFWGN5EMJR2XX6MD4`
+- Tested: 2026-07-27T04:09:45.000Z
+- Prompt (en) SHA-256: `4e62eb45c28efb855a105fac2afa316fdc2fd297f45ca90f9e0fec1649a3eb9d`
+- Artifact: 10.04s, 1280×720, 24 fps, H.264/AAC
+- Artifact SHA-256: `f0d633cbf0fe2913cc4181cf1bec495681da4ee56797f34ac16a4896ed4f0d33`
+- Review: partial-pass
+
+**EN:** The generated video preserves the rainy window, cafe layout, standing adult, and first-frame composition, then moves into the requested listener close-up without an embrace. The seated person's face was blurred in the source image, so the detailed final close-up invents facial information that cannot be verified against the reference.
+
+**中文：** 成片保留了雨窗、咖啡馆布局、站立人物和首帧构图，并按要求在无拥抱的情况下进入倾听者近景；但源图中坐着人物的脸较模糊，结尾清晰近景补出了无法与参考图核对的面部细节。
+
 | Field | Value |
 | --- | --- |
 | Category | Cinematic Shots / 电影镜头 |
@@ -16,6 +29,7 @@ A restrained reunion told through one glance, one step, and a reflection crossin
 | Aspect ratio | 16:9 |
 | Resolution | 720p |
 | Difficulty | intermediate |
+| Render status | Verified render (partial-pass) / 已实测（部分通过） |
 
 ## Directorial Intent / 导演意图
 

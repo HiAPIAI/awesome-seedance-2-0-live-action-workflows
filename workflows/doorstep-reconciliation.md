@@ -8,6 +8,8 @@ A two-person doorstep scene that ends with permission to enter, not a complete e
 
 以允许进门而非彻底和解结束的双人门口场景。
 
+> **Render status / 生成状态：** This entry is an unverified workflow template. It has not yet completed the repository's real-task, file-validation, and human-review gate. / 本条目是未实测工作流模板，尚未完成仓库要求的真实任务、文件校验和人工画面复核。
+
 | Field | Value |
 | --- | --- |
 | Category | Dialogue Scenes / 对话场景 |
@@ -16,6 +18,7 @@ A two-person doorstep scene that ends with permission to enter, not a complete e
 | Aspect ratio | 16:9 |
 | Resolution | 720p |
 | Difficulty | intermediate |
+| Render status | Unverified template / 未实测模板 |
 
 ## Directorial Intent / 导演意图
 

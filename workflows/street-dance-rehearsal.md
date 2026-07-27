@@ -8,6 +8,8 @@ A motion-reference workflow that transfers rhythm and blocking without transferr
 
 迁移动作节奏和走位但不迁移源舞者身份的动作参考工作流。
 
+> **Render status / 生成状态：** This entry is an unverified workflow template. It has not yet completed the repository's real-task, file-validation, and human-review gate. / 本条目是未实测工作流模板，尚未完成仓库要求的真实任务、文件校验和人工画面复核。
+
 | Field | Value |
 | --- | --- |
 | Category | Performance / 人物表演 |
@@ -16,6 +18,7 @@ A motion-reference workflow that transfers rhythm and blocking without transferr
 | Aspect ratio | 9:16 |
 | Resolution | 720p |
 | Difficulty | advanced |
+| Render status | Unverified template / 未实测模板 |
 
 ## Directorial Intent / 导演意图
 
