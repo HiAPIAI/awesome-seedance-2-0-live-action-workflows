@@ -15,3 +15,10 @@
 - [ ] `npm test`
 - [ ] English and Chinese generated pages reviewed
 
+## Render Status
+
+- Status: template-only / verified render
+- Task ID, if verified:
+- Known visual or audio deviations:
+- [ ] Any render evidence was added to `data/render-tests.json`
+- [ ] No expiring output URL is being used as permanent evidence

@@ -8,6 +8,19 @@ A reference-driven vertical walk that prioritizes crowd realism, sensory detail,
 
 优先保证人群真实、感官细节和主体稳定的参考驱动竖屏漫步。
 
+## Verified Render Evidence / 真实生成证据
+
+- Task: `tk-hiapi-01KYGVY9P68NYDE7X1MGYSK34Y`
+- Tested: 2026-07-27T04:10:59.000Z
+- Prompt (en) SHA-256: `4ea5aa156671b6a6d653b115c778c7cd9aeac82bc12fa269d4b1f466634b9174`
+- Artifact: 12.04s, 720×1280, 24 fps, H.264/AAC
+- Artifact SHA-256: `164160bd36ce6b5e85060728c76b3f258266dfa946bc039a15656b6fb948d17b`
+- Review: pass
+
+**EN:** Using one original image reference and no motion video, the output preserves the adult's face, hair, dark raincoat, and grounded night-market lighting. It follows the requested rear follow, side-profile stall glance, and return-behind sequence while keeping the subject readable in a realistic crowd.
+
+**中文：** 在只提供一张原创参考图、未提供动作视频的情况下，成片保持了成年人物的脸、发型、深色雨衣和写实夜市光线，并完成后方跟随、侧面看向摊位、再回到后方的镜头路径，人物在真实人群中始终清晰可辨。
+
 | Field | Value |
 | --- | --- |
 | Category | Everyday Life / 生活场景 |
@@ -16,6 +29,7 @@ A reference-driven vertical walk that prioritizes crowd realism, sensory detail,
 | Aspect ratio | 9:16 |
 | Resolution | 720p |
 | Difficulty | intermediate |
+| Render status | Verified render (pass) / 已实测（通过） |
 
 ## Directorial Intent / 导演意图
 

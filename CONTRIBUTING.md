@@ -41,6 +41,22 @@ Do not edit generated README or workflow pages directly.
 3. Run `npm test`.
 4. Review the generated English and Chinese pages.
 
+## Verified Render Evidence / 真实生成证据
+
+A workflow may be contributed as an unverified template, but it must not be described as a tested result. To mark it as verified:
+
+1. Run the workflow with `--output-dir outputs` so the task response, request, media file, and checksum are preserved.
+2. Check duration, dimensions, codecs, audio, continuity, camera direction, timed beats, and visible failure modes.
+3. Add a bilingual record to `data/render-tests.json`, including prompt language, prompt SHA-256, `current_revision`, and every known deviation. Run `npm run build` afterward.
+4. Do not store expiring output URLs as evidence. Publish preview media only when its license and real-person consent allow public redistribution.
+
+工作流可以先作为“未实测模板”贡献，但不得描述成已经验证的效果。要标记为已实测：
+
+1. 使用 `--output-dir outputs` 运行，保留任务响应、请求、媒体文件和校验和。
+2. 检查时长、尺寸、编码、音轨、连续性、镜头方向、时间轴节拍和可见失败点。
+3. 在 `data/render-tests.json` 中加入双语记录，包含提示词语言、提示词 SHA-256、`current_revision`，并如实写出所有已知偏差；随后运行 `npm run build`。
+4. 不要把会过期的输出 URL 当作证据。只有在许可证和真人授权允许公开再分发时，才能发布预览素材。
+
 ## Required Workflow Fields / 必需字段
 
 Every workflow must include:
@@ -63,6 +79,6 @@ Every workflow must include:
 - [ ] All depicted people are adults, or the scenario is clearly safe and age-appropriate.
 - [ ] Any real-person identity, voice, product, or media has permission.
 - [ ] HiAPI request fields match the selected media mode.
+- [ ] The PR labels the entry honestly as template-only or includes valid render evidence.
 - [ ] `npm test` passes.
 - [ ] Generated files are committed.
-

@@ -8,6 +8,8 @@ A vertical lifestyle clip built from three small continuous actions instead of a
 
 由三个连续小动作构成的竖屏生活片，而不是无关联动作拼贴。
 
+> **Render status / 生成状态：** This entry is an unverified workflow template. It has not yet completed the repository's real-task, file-validation, and human-review gate. / 本条目是未实测工作流模板，尚未完成仓库要求的真实任务、文件校验和人工画面复核。
+
 | Field | Value |
 | --- | --- |
 | Category | Everyday Life / 生活场景 |
@@ -16,6 +18,7 @@ A vertical lifestyle clip built from three small continuous actions instead of a
 | Aspect ratio | 9:16 |
 | Resolution | 720p |
 | Difficulty | starter |
+| Render status | Unverified template / 未实测模板 |
 
 ## Directorial Intent / 导演意图
 

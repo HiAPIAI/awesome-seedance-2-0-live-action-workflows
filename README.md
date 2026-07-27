@@ -16,9 +16,22 @@ A bilingual workflow library for AI filmmakers and short-form teams: cinematic s
 
 </div>
 
-> **Status:** Launch entries are reusable workflow templates, not claimed render tests. For real Seedance 2.0 outputs, use the [HiAPIAI prompt gallery](https://github.com/HiAPIAI/awesome-seedance-2-0-prompts). Previews are added only after permission and generation review.
+> **Status:** The repository distinguishes workflow templates from verified renders. Only entries with a completed API task, file validation, and human frame review appear in the verification table below; preview media still requires publication rights.
 
 This repository adapts the strongest navigation, asset-role, timeline, quality-gate, and contribution patterns from popular Seedance, AI short-film, and Awesome List projects while keeping every workflow original and live-action focused. See [reference repository research](docs/research-notes.md).
+
+## Verified Render Tests
+
+Only entries that completed a real API task, file validation, and human frame review appear here. Evidence is stored in `data/render-tests.json`; after a prompt changes, its old task becomes historical and the current revision must be tested again.
+
+| Workflow | Mode | Tested | Revision | Review | Artifact evidence | Known deviation |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Night Corridor Suspense](workflows/night-corridor-suspense.md) | text-to-video | 2026-07-27 | Historical | Partial pass | 8.04s · 1280×720 · 24 fps · H.264/AAC | The corridor, rear tracking, progressive darkness, stable subject, audio track, and final stop are present. The requested two separate light switch-offs occur as one near-simultaneous lighting change around 3.5-3.75 seconds. |
+| [Night Corridor Suspense](workflows/night-corridor-suspense.md) | text-to-video | 2026-07-27 | Current | Partial pass | 8.04s · 1280×720 · 24 fps · H.264/AAC | The revised prompt prevents a global exposure drop: one central ceiling light switches off independently around 3.25-3.5 seconds while the side lights remain stable. A second distinct light switch-off is still not visible, so the two-step sequence remains only partially satisfied. |
+| [Rain-Window Reunion](workflows/rain-window-reunion.md) | image-to-video | 2026-07-27 | Current | Partial pass | 10.04s · 1280×720 · 24 fps · H.264/AAC | The generated video preserves the rainy window, cafe layout, standing adult, and first-frame composition, then moves into the requested listener close-up without an embrace. The seated person's face was blurred in the source image, so the detailed final close-up invents facial information that cannot be verified against the reference. |
+| [Night Market Walk](workflows/night-market-walk.md) | reference-to-video | 2026-07-27 | Current | Pass | 12.04s · 720×1280 · 24 fps · H.264/AAC | Using one original image reference and no motion video, the output preserves the adult's face, hair, dark raincoat, and grounded night-market lighting. It follows the requested rear follow, side-profile stall glance, and return-behind sequence while keeping the subject readable in a realistic crowd. |
+
+---
 
 ## Start In 60 Seconds
 
@@ -31,6 +44,7 @@ npm run generate -- night-corridor-suspense --dry-run
 
 3. Set `HIAPI_API_KEY`, remove `--dry-run`, and the runner creates the task and waits for the result.
 4. For image or reference workflows, repeat `--media key=url` to replace media placeholders.
+5. Add `--output-dir outputs` to download the result and task evidence. If polling is interrupted, resume with `--task-id TASK_ID` without submitting again.
 
 For agent-run generation, install the [HiAPI Seedance 2.0 Video Skill](https://github.com/HiAPIAI/hiapi-seedance-2-0-video-skill).
 

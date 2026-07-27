@@ -44,6 +44,26 @@ body:
       description: Include intent, asset roles, timed beats, sound, prompt, continuity locks, and two failure fixes.
     validations:
       required: true
+  - type: dropdown
+    id: render-status
+    attributes:
+      label: Render status
+      description: Templates are welcome, but only completed and reviewed tasks may be called verified.
+      options:
+        - Template only; not yet generated
+        - Real HiAPI task completed and reviewed
+    validations:
+      required: true
+  - type: input
+    id: task-id
+    attributes:
+      label: HiAPI task ID (verified renders only)
+      placeholder: tk-hiapi-...
+  - type: textarea
+    id: deviations
+    attributes:
+      label: Known output deviations
+      description: Describe missed beats, continuity drift, audio issues, or other visible differences from the workflow.
   - type: checkboxes
     id: rights
     attributes:
@@ -53,4 +73,3 @@ body:
           required: true
         - label: Any real-person identity, voice, product, or preview media has permission for public use.
           required: true
-
