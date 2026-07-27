@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<a href="https://www.hiapi.ai/zh?utm_source=github&utm_medium=readme&utm_campaign=awesome-seedance-2-0-live-action-workflows"><img src="./assets/cover.svg" alt="Awesome Seedance 2.0 真人实拍工作流" width="100%"></a>
+<a href="https://www.hiapi.ai/zh?utm_source=github&utm_medium=readme&utm_campaign=awesome-seedance-2-0-live-action-workflows"><img src="./assets/cover.webp" alt="Awesome Seedance 2.0 真人实拍工作流" width="100%"></a>
 
 # Awesome Seedance 2.0 真人实拍工作流
 
