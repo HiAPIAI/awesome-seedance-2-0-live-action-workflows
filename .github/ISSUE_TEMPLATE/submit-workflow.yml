@@ -1,0 +1,56 @@
+name: Submit a live-action workflow
+description: Propose an original Seedance 2.0 live-action workflow for HiAPI
+title: "[Workflow] "
+labels:
+  - workflow
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit original, IP-clean work only. Do not include unlicensed media, celebrity likeness, or a real person's identity/voice without permission.
+  - type: input
+    id: title
+    attributes:
+      label: Workflow title
+      placeholder: Rain-window reunion
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Cinematic Shots
+        - Everyday Life
+        - Dialogue Scenes
+        - Performance
+        - Documentary / UGC
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: HiAPI media mode
+      options:
+        - text-to-video
+        - image-to-video
+        - reference-to-video
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow draft
+      description: Include intent, asset roles, timed beats, sound, prompt, continuity locks, and two failure fixes.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights and consent
+      options:
+        - label: I created this workflow or have permission to submit it.
+          required: true
+        - label: Any real-person identity, voice, product, or preview media has permission for public use.
+          required: true
+
