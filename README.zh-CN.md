@@ -16,9 +16,22 @@
 
 </div>
 
-> **状态说明：** 首发条目是可复用工作流模板，不冒充实测成片。真实 Seedance 2.0 成片案例请查看 [HiAPIAI 提示词画廊](https://github.com/HiAPIAI/awesome-seedance-2-0-prompts)。后续只在获得授权并完成生成验证后添加预览。
+> **状态说明：** 仓库会明确区分“工作流模板”和“已实测条目”。只有完成真实 API 生成、文件校验与人工画面复核的条目才会出现在下方验证表；预览素材仍需具备公开授权。
 
 本仓库综合参考了热门 Seedance、AI 短片与 Awesome List 项目的入口设计、素材角色、时间轴、质量门槛和贡献机制，同时保持内容原创且聚焦真人场景。详见 [同类开源仓库调研](docs/research-notes.md)。
+
+## 已验证的真实生成
+
+只有完成真实 API 生成、文件校验和人工画面复核的条目才会进入此表。任务证据保存在 `data/render-tests.json`；提示词修改后，旧任务自动降为历史版本，当前版本必须重新实测。
+
+| 工作流 | 模式 | 测试日期 | 版本 | 复核 | 成片证据 | 已知偏差 |
+| --- | --- | --- | --- | --- | --- | --- |
+| [夜间走廊悬念](workflows/night-corridor-suspense.md) | text-to-video | 2026-07-27 | 历史版本 | 部分通过 | 8.04s · 1280×720 · 24 fps · H.264/AAC | 走廊、后方跟拍、逐步变暗、人物稳定、音轨和最后停步均已实现；但要求的两盏灯依次熄灭，在约 3.5-3.75 秒表现为一次近乎同时的灯光变化。 |
+| [夜间走廊悬念](workflows/night-corridor-suspense.md) | text-to-video | 2026-07-27 | 当前版本 | 部分通过 | 8.04s · 1280×720 · 24 fps · H.264/AAC | 修改后的提示词避免了整体曝光骤降：约 3.25-3.5 秒一盏中央顶灯独立熄灭，侧灯保持稳定；但仍未看到第二盏灯单独熄灭，因此两步灯光节拍仍只达到部分要求。 |
+| [雨窗重逢](workflows/rain-window-reunion.md) | image-to-video | 2026-07-27 | 当前版本 | 部分通过 | 10.04s · 1280×720 · 24 fps · H.264/AAC | 成片保留了雨窗、咖啡馆布局、站立人物和首帧构图，并按要求在无拥抱的情况下进入倾听者近景；但源图中坐着人物的脸较模糊，结尾清晰近景补出了无法与参考图核对的面部细节。 |
+| [夜市漫步](workflows/night-market-walk.md) | reference-to-video | 2026-07-27 | 当前版本 | 通过 | 12.04s · 720×1280 · 24 fps · H.264/AAC | 在只提供一张原创参考图、未提供动作视频的情况下，成片保持了成年人物的脸、发型、深色雨衣和写实夜市光线，并完成后方跟随、侧面看向摊位、再回到后方的镜头路径，人物在真实人群中始终清晰可辨。 |
+
+---
 
 ## 60 秒开始
 
@@ -31,6 +44,7 @@ npm run generate -- night-corridor-suspense --dry-run
 
 3. 设置 `HIAPI_API_KEY` 后去掉 `--dry-run`，即可创建任务并等待结果。
 4. 图生视频或参考视频工作流可用重复的 `--media key=url` 替换素材占位符。
+5. 使用 `--output-dir outputs` 下载成片和任务证据；轮询中断时使用 `--task-id TASK_ID` 恢复，不会重复提交。
 
 需要 Agent 直接执行时，安装 [HiAPI Seedance 2.0 Video Skill](https://github.com/HiAPIAI/hiapi-seedance-2-0-video-skill)。
 

@@ -8,6 +8,8 @@ A single-take musician workflow that keeps hands, instrument, voice, and room ac
 
 保持手、乐器、人声和房间声学一致的单镜头音乐人工作流。
 
+> **Render status / 生成状态：** This entry is an unverified workflow template. It has not yet completed the repository's real-task, file-validation, and human-review gate. / 本条目是未实测工作流模板，尚未完成仓库要求的真实任务、文件校验和人工画面复核。
+
 | Field | Value |
 | --- | --- |
 | Category | Performance / 人物表演 |
@@ -16,6 +18,7 @@ A single-take musician workflow that keeps hands, instrument, voice, and room ac
 | Aspect ratio | 16:9 |
 | Resolution | 720p |
 | Difficulty | advanced |
+| Render status | Unverified template / 未实测模板 |
 
 ## Directorial Intent / 导演意图
 

@@ -8,6 +8,8 @@ A two-person dialogue scene where the apology lands through a failed sentence an
 
 道歉通过一句没说完的话和倾听者反应落地的双人对话场景。
 
+> **Render status / 生成状态：** This entry is an unverified workflow template. It has not yet completed the repository's real-task, file-validation, and human-review gate. / 本条目是未实测工作流模板，尚未完成仓库要求的真实任务、文件校验和人工画面复核。
+
 | Field | Value |
 | --- | --- |
 | Category | Dialogue Scenes / 对话场景 |
@@ -16,6 +18,7 @@ A two-person dialogue scene where the apology lands through a failed sentence an
 | Aspect ratio | 16:9 |
 | Resolution | 720p |
 | Difficulty | intermediate |
+| Render status | Unverified template / 未实测模板 |
 
 ## Directorial Intent / 导演意图
 
