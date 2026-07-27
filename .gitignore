@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+
+# Local-only draft montage from the pre-publication audit.
+assets/cover.png
+assets/showcase/
