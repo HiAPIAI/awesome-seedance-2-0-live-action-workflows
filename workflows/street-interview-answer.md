@@ -8,6 +8,8 @@ A vertical creator-style answer with a believable pause, one concise sentence, a
 
 带真实停顿、一句简洁回答和环境干扰的竖屏创作者采访。
 
+> **Render status / 生成状态：** This entry is an unverified workflow template. It has not yet completed the repository's real-task, file-validation, and human-review gate. / 本条目是未实测工作流模板，尚未完成仓库要求的真实任务、文件校验和人工画面复核。
+
 | Field | Value |
 | --- | --- |
 | Category | Documentary / UGC / 纪实与 UGC |
@@ -16,6 +18,7 @@ A vertical creator-style answer with a believable pause, one concise sentence, a
 | Aspect ratio | 9:16 |
 | Resolution | 720p |
 | Difficulty | starter |
+| Render status | Unverified template / 未实测模板 |
 
 ## Directorial Intent / 导演意图
 

@@ -5,7 +5,9 @@ Model: seedance-2.0
 Create task: POST https://api.hiapi.ai/v1/tasks
 Read task: GET https://api.hiapi.ai/v1/tasks/{taskId}
 Runner: npm run generate -- <workflow-id> [--dry-run] [--media key=url]
+Resume task: npm run generate -- --task-id TASK_ID [--output-dir outputs]
 Research notes: docs/research-notes.md
+Verified render evidence: data/render-tests.json
 API key: https://www.hiapi.ai/en/register?utm_source=github&utm_medium=readme&utm_campaign=awesome-seedance-2-0-live-action-workflows
 Agent skill: https://github.com/HiAPIAI/hiapi-seedance-2-0-video-skill
 

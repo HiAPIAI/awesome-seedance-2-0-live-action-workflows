@@ -8,6 +8,8 @@ A 15-second continuous arrival that moves from hallway isolation to a warm occup
 
 15 秒连续镜头，从走廊的孤立感进入有人等待的暖色房间。
 
+> **Render status / 生成状态：** This entry is an unverified workflow template. It has not yet completed the repository's real-task, file-validation, and human-review gate. / 本条目是未实测工作流模板，尚未完成仓库要求的真实任务、文件校验和人工画面复核。
+
 | Field | Value |
 | --- | --- |
 | Category | Cinematic Shots / 电影镜头 |
@@ -16,6 +18,7 @@ A 15-second continuous arrival that moves from hallway isolation to a warm occup
 | Aspect ratio | 16:9 |
 | Resolution | 720p |
 | Difficulty | advanced |
+| Render status | Unverified template / 未实测模板 |
 
 ## Directorial Intent / 导演意图
 
